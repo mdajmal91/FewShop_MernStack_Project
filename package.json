@@ -1,0 +1,34 @@
+{
+  "name": "fewshop-full-stack",
+  "version": "1.0.0",
+  "description": "Full-stack E-commerce Application (FewShop)",
+  "keywords": [
+    "Md",
+    "MERN",
+    "Ecommerce"
+  ],
+  "license": "ISC",
+  "author": "Md Khan",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "npm install && cd backend && npm install && cd ../fronted && npm install",
+    "build": "cd backend && npm run build && cd ../fronted && npm run build",
+    "start-all": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+   "setup": "npm install && cd backend && npm install && cd ../fronted && npm install",
+   "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+   "start:backend": "cd backend && npm start",
+   "start:frontend": "cd fronted && npm start",
+   "dev": "concurrently \"cd backend && npm run dev\" \"cd fronted && npm start\"",
+   "test": "cd backend && npm test && cd fronted && npm test",
+   "test:backend": "cd backend && npm test",
+   "test:frontend": "cd fronted && npm test",
+   "lint": "cd backend && npm run lint && cd fronted && npm run lint",
+   "lint:backend": "cd backend && npm run lint",
+   "lint:frontend": "cd fronted && npm run lint",
+   "seed": "npm prefix backend && npm run seed"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
