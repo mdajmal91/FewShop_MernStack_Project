@@ -1,0 +1,318 @@
+/* ===== PAGE ===== */
+.about-page {
+  background: linear-gradient(
+    135deg,
+    #081223,
+    #10264a,
+    #081a35
+  );
+  color: white;
+}
+
+/* ===== HERO ===== */
+.about-hero {
+  min-height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  padding: 80px 20px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.45),
+      rgba(0,0,0,.55)
+    ),
+    url('https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1600')
+    center/cover;
+}
+
+.hero-container {
+  max-width: 850px;
+}
+
+.hero-title {
+  font-size: 4rem;
+  font-weight: 900;
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    90deg,
+    #fff,
+    #f6d96f
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.85);
+  line-height: 1.8;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+/* ===== MISSION ===== */
+.mission-flex {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.mission-text {
+  flex: 1;
+}
+
+.mission-text h2 {
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+  color: #f6d96f;
+}
+
+.mission-text p {
+  color: rgba(255,255,255,.8);
+  line-height: 1.9;
+  margin-bottom: 18px;
+}
+
+.mission-image {
+  flex: 1;
+}
+
+.mission-image img {
+  width: 100%;
+  border-radius: 30px;
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,.35);
+
+  transition: .4s ease;
+}
+
+.mission-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== SECTION TITLES ===== */
+.section-title {
+  font-size: 2.6rem;
+  color: white;
+  font-weight: 800;
+}
+
+/* ===== BENEFITS ===== */
+.benefits-section {
+  background:
+    rgba(255,255,255,.03);
+}
+
+.about-benefits {
+  display: grid;
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px,1fr)
+    );
+
+  gap: 25px;
+}
+
+.benefit-card {
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  backdrop-filter:
+    blur(20px);
+
+  border-radius: 30px;
+
+  transition: .3s ease;
+
+  padding: 35px;
+}
+
+.benefit-card:hover {
+  transform:
+    translateY(-8px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+}
+
+.benefit-card h3 {
+  color: white;
+  margin-bottom: 12px;
+}
+
+.benefit-card p {
+  color:
+    rgba(255,255,255,.75);
+  line-height: 1.7;
+}
+
+/* ===== SOCIAL ===== */
+.social-links-section {
+  text-align: center;
+}
+
+.social-links-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 35px;
+}
+
+.social-buttons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.social-btn {
+  padding: 16px 28px;
+  border-radius: 18px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: .3s ease;
+  color: white;
+
+  min-width: 180px;
+}
+
+.social-btn:hover {
+  transform:
+    translateY(-4px);
+}
+
+.youtube {
+  background:
+    linear-gradient(
+      135deg,
+      #ff0000,
+      #c10000
+    );
+}
+
+.facebook {
+  background:
+    linear-gradient(
+      135deg,
+      #1877f2,
+      #0b58c5
+    );
+}
+
+.twitter {
+  background:
+    linear-gradient(
+      135deg,
+      #1da1f2,
+      #0a7ec2
+    );
+}
+
+.instagram {
+  background:
+    linear-gradient(
+      135deg,
+      #fd1d1d,
+      #e1306c,
+      #833ab4
+    );
+}
+
+/* ===== CTA ===== */
+.cta-section {
+  padding-bottom: 80px;
+}
+
+.cta-section h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+.cta-section p {
+  color:
+    rgba(255,255,255,.75);
+}
+
+.cta-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.main-cta,
+.outline-cta {
+  padding: 16px 34px;
+  border-radius: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: .3s;
+}
+
+.main-cta {
+  background:
+    linear-gradient(
+      135deg,
+      #f6d96f,
+      #e8bd4a
+    );
+
+  color: #111;
+}
+
+.main-cta:hover {
+  transform:
+    translateY(-3px);
+}
+
+.outline-cta {
+  border:
+    2px solid
+    rgba(255,255,255,.2);
+
+  color: white;
+}
+
+.outline-cta:hover {
+  background:
+    rgba(255,255,255,.08);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+
+  .mission-flex {
+    flex-direction: column;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .social-buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

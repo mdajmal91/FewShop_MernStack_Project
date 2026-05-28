@@ -1,0 +1,312 @@
+/* ===== PAGE ===== */
+.saffron-orange-page {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      135deg,
+      #071226 0%,
+      #0d1f42 50%,
+      #081731 100%
+    );
+
+  padding: 50px 0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 92%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ===== MAIN CARD ===== */
+.admin-products-card {
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  backdrop-filter:
+    blur(20px);
+
+  border-radius: 35px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.35);
+}
+
+/* ===== HEADER ===== */
+.admin-products-card h2 {
+  color: white;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 14px !important;
+  padding: 10px 18px !important;
+  font-weight: 700 !important;
+  transition: .3s ease;
+}
+
+.btn:hover {
+  transform:
+    translateY(-2px);
+}
+
+/* DASHBOARD BTN */
+.btn-outline-dark {
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  color: white !important;
+}
+
+.btn-outline-dark:hover {
+  background:
+    rgba(255,255,255,.14);
+}
+
+/* ADD PRODUCT */
+.btn-success {
+  background:
+    linear-gradient(
+      135deg,
+      #22c55e,
+      #16a34a
+    ) !important;
+
+  border: none !important;
+}
+
+/* ===== TABLE ===== */
+.custom-admin-table {
+  background:
+    rgba(255,255,255,.05);
+
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+/* TABLE HEAD */
+.custom-admin-table thead {
+  background:
+    rgba(255,255,255,.08);
+}
+
+.custom-admin-table th {
+  color: #f6d96f !important;
+  font-size: .95rem;
+  font-weight: 700;
+  border: none !important;
+  padding: 18px !important;
+}
+
+/* TABLE BODY */
+.custom-admin-table td {
+  color: white;
+  border-color:
+    rgba(255,255,255,.06)
+    !important;
+
+  padding: 18px !important;
+  vertical-align: middle;
+}
+
+/* HOVER */
+.custom-admin-table tbody tr {
+  transition: .3s ease;
+}
+
+.custom-admin-table tbody tr:hover {
+  background:
+    rgba(255,255,255,.06);
+}
+
+/* ===== PRODUCT IMAGE ===== */
+.admin-prod-thumb {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 16px;
+
+  object-fit: cover;
+
+  border:
+    2px solid
+    rgba(255,255,255,.08);
+
+  background: white;
+}
+
+/* ===== CATEGORY BADGE ===== */
+.badge {
+  padding: 10px 14px !important;
+  border-radius: 999px !important;
+  font-size: .85rem;
+  font-weight: 600;
+}
+
+/* ===== PRICE ===== */
+.text-primary {
+  color:
+    #f6d96f
+    !important;
+}
+
+/* ===== STOCK ===== */
+.text-success {
+  color:
+    #4ade80
+    !important;
+}
+
+.text-danger {
+  color:
+    #ef4444
+    !important;
+}
+
+/* ===== ACTION BUTTONS ===== */
+.btn-outline-primary {
+  border:
+    1px solid
+    rgba(
+      59,
+      130,
+      246,
+      .4
+    ) !important;
+
+  background:
+    rgba(
+      59,
+      130,
+      246,
+      .1
+    ) !important;
+
+  color:
+    #60a5fa
+    !important;
+}
+
+.btn-outline-primary:hover {
+  background:
+    rgba(
+      59,
+      130,
+      246,
+      .25
+    ) !important;
+}
+
+.btn-danger {
+  background:
+    linear-gradient(
+      135deg,
+      #ef4444,
+      #dc2626
+    ) !important;
+
+  border: none !important;
+}
+
+/* ===== ALERT ===== */
+.alert-danger {
+  background:
+    rgba(
+      239,
+      68,
+      68,
+      .12
+    ) !important;
+
+  border:
+    1px solid
+    rgba(
+      239,
+      68,
+      68,
+      .2
+    );
+
+  color: #fecaca;
+  border-radius: 18px;
+}
+
+/* ===== SPINNER ===== */
+.spinner {
+  width: 55px;
+  height: 55px;
+
+  border:
+    4px solid
+    rgba(
+      255,
+      255,
+      255,
+      .1
+    );
+
+  border-top:
+    4px solid
+    #f6d96f;
+
+  border-radius: 50%;
+
+  animation:
+    spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform:
+      rotate(360deg);
+  }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+
+  .admin-products-card {
+    padding: 25px;
+  }
+
+  .d-flex {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch !important;
+  }
+
+  .custom-admin-table {
+    min-width: 900px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .admin-products-card h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .admin-prod-thumb {
+    width: 50px;
+    height: 50px;
+  }
+}

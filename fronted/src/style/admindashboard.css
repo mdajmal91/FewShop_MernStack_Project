@@ -1,0 +1,25 @@
+.stat-card {
+    transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+}
+
+.admin-content-box {
+    min-height: 400px;
+}
+
+.table img {
+    border: 1px solid #eee;
+}
+
+.admin-tabs .btn {
+    border-radius: 20px;
+    padding: 8px 25px;
+    font-weight: 600;
+}
+
+.spinner {
+    border-top-color: #ff4b2b !important;
+}

@@ -1,0 +1,378 @@
+/* ===== PAGE ===== */
+.cart-page {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #071226 0%,
+    #0d1f42 50%,
+    #081731 100%
+  );
+  color: white;
+  padding: 40px 0;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 92%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* ===== HEADING ===== */
+.cart-heading {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 35px;
+  color: white;
+}
+
+.cart-count {
+  color: #f6d96f;
+  margin-left: 8px;
+}
+
+/* ===== LAYOUT ===== */
+.cart-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* ======================
+   CART ITEM CARD
+====================== */
+.cart-item-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  border: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 28px;
+  padding: 22px;
+  margin-bottom: 20px;
+
+  transition: 0.3s ease;
+}
+
+.cart-item-card:hover {
+  transform: translateY(-3px);
+}
+
+/* IMAGE */
+.cart-item-card img {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 22px;
+  background: white;
+}
+
+/* DETAILS */
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item-details h5 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cart-item-details p {
+  color: #d0d8ec;
+  margin-bottom: 8px;
+}
+
+.item-total {
+  color: #f6d96f !important;
+  font-weight: 700;
+}
+
+/* ======================
+   QUANTITY
+====================== */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.quantity-controls button {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.12
+  );
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.quantity-controls button:hover {
+  background: #f6d96f;
+  color: #111;
+}
+
+.qty-display {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* REMOVE BUTTON */
+.btn-remove {
+  width: 52px;
+  height: 52px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(
+    255,
+    70,
+    70,
+    0.15
+  );
+  color: #ffb4b4;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-remove:hover {
+  background: #ff4b4b;
+  color: white;
+}
+
+/* ======================
+   SUMMARY
+====================== */
+.cart-summary-card {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  border: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.08
+    );
+
+  backdrop-filter: blur(20px);
+
+  border-radius: 30px;
+  padding: 28px;
+
+  position: sticky;
+  top: 100px;
+}
+
+.summary-heading {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.summary-icon {
+  color: #f6d96f;
+}
+
+/* ROWS */
+.summary-row,
+.summary-total-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.summary-row span {
+  color: #d6dff3;
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1px solid
+    rgba(
+      255,
+      255,
+      255,
+      0.15
+    );
+  margin: 25px 0;
+}
+
+.summary-total-row {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.amount {
+  color: #f6d96f;
+}
+
+.text-free-shipping {
+  color: #4ade80;
+  font-weight: 600;
+}
+
+/* ======================
+   TRUST BADGES
+====================== */
+.trust-badges {
+  margin: 25px 0;
+}
+
+.trust-badge-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.05
+  );
+  padding: 14px;
+  border-radius: 16px;
+  margin-bottom: 12px;
+  color: #dbe5ff;
+}
+
+.badge-icon {
+  font-size: 18px;
+}
+
+/* ======================
+   BUTTON
+====================== */
+.btn-checkout {
+  width: 100%;
+  border: none;
+  padding: 17px;
+  border-radius: 18px;
+
+  background: linear-gradient(
+    90deg,
+    #f6d96f,
+    #ffb95e
+  );
+
+  color: #111;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-checkout:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px
+    rgba(
+      255,
+      191,
+      0,
+      0.35
+    );
+}
+
+/* NOTE */
+.secure-note {
+  margin-top: 18px;
+  text-align: center;
+  color: #c9d5ef;
+  font-size: 13px;
+}
+
+/* ======================
+   EMPTY CART
+====================== */
+.empty-cart-box {
+  text-align: center;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+  padding: 50px;
+  border-radius: 35px;
+  backdrop-filter: blur(20px);
+}
+
+.empty-cart-icon {
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media (max-width: 992px) {
+  .cart-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .cart-summary-card {
+    position: static;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-item-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cart-item-card img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .quantity-controls {
+    justify-content: center;
+  }
+
+  .cart-heading {
+    font-size: 1.8rem;
+  }
+}
+
+/* Style for Rupee Symbol */
+.currency-symbol {
+  font-size: 0.9em; /* Rupee symbol ko number se thoda chhota rakhe */
+  opacity: 0.9; /* Thoda halka dikhe */
+  margin-right: 2px; /* Symbol aur number ke beech thoda space */
+}

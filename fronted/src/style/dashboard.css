@@ -1,0 +1,16 @@
+.dashboard-denied {
+    min-height: 60vh;
+}
+
+.denied-card {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.dashboard-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.error-box { box-shadow: 0 2px 4px rgba(0,0,0,0.05); }

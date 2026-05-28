@@ -1,0 +1,123 @@
+.contact-page {
+  background-color: #0a0a0a;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.contact-hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1534536281715-e28d76689b4d?w=1600&q=80');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.contact-hero-content h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-badge {
+  background: #ff8c00;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: -50px auto 50px;
+  padding: 0 20px;
+}
+
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.contact-card {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+  border-color: #ff8c00;
+}
+
+.contact-card .icon {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact-form-wrapper {
+  background: #1a1a1a;
+  border-radius: 30px;
+  overflow: hidden;
+  border: 1px solid #333;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form-card {
+  padding: 50px;
+}
+
+.contact-form-card h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ccc;
+  font-weight: 600;
+}
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  padding: 15px;
+  background: #252525;
+  border: 1px solid #444;
+  border-radius: 12px;
+  color: white;
+  outline: none;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+  border-color: #ff8c00;
+}
+
+.send-btn {
+  width: 100%;
+  padding: 18px;
+  background: linear-gradient(90deg, #ff8c00, #ff4500);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.send-btn:hover {
+  opacity: 0.9;
+}

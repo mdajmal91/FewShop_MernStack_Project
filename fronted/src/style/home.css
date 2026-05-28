@@ -1,0 +1,467 @@
+/* ===== HOME PAGE ===== */
+.home-page {
+  background:
+    linear-gradient(
+      135deg,
+      #071226 0%,
+      #0d1f42 50%,
+      #081731 100%
+    );
+
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+  width: 90%;
+  max-width: 1350px;
+  margin: auto;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 60px;
+
+  padding: 70px 8%;
+}
+
+/* LEFT */
+.hero-content {
+  flex: 1;
+  max-width: 650px;
+}
+
+/* Badge */
+.hero-badge {
+  display: inline-block;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,0.08);
+
+  padding: 12px 18px;
+
+  border-radius: 999px;
+
+  color: #f6d96f;
+  font-size: .95rem;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+
+/* TITLE */
+.hero-title {
+  font-size: 4.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+
+  margin-bottom: 22px;
+}
+
+.hero-title span {
+  background:
+    linear-gradient(
+      90deg,
+      #f6d96f,
+      #ffb84d
+    );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* SUBTITLE */
+.hero-subtitle {
+  color:
+    rgba(255,255,255,0.75);
+
+  font-size: 1.15rem;
+
+  line-height: 1.9;
+
+  margin-bottom: 35px;
+}
+
+/* BUTTONS */
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+
+  margin-bottom: 45px;
+}
+
+.cta-button {
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  padding: 17px 32px;
+
+  border-radius: 20px;
+
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition: .3s ease;
+}
+
+/* PRIMARY */
+.primary-btn {
+  background:
+    linear-gradient(
+      135deg,
+      #f6d96f,
+      #f3c84b
+    );
+
+  color: #111827;
+
+  box-shadow:
+    0 12px 30px
+    rgba(
+      246,
+      217,
+      111,
+      .28
+    );
+}
+
+.primary-btn:hover {
+  transform:
+    translateY(-3px);
+}
+
+/* SECONDARY */
+.secondary-btn {
+  background:
+    rgba(255,255,255,.06);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  color: white;
+}
+
+.secondary-btn:hover {
+  background:
+    rgba(255,255,255,.12);
+}
+
+/* =========================
+   HERO STATS
+========================= */
+.hero-stats {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-stats div h3 {
+  font-size: 2rem;
+  color: #f6d96f;
+  margin-bottom: 5px;
+}
+
+.hero-stats div p {
+  color:
+    rgba(255,255,255,.65);
+}
+
+/* =========================
+   HERO PRODUCT CARD
+========================= */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-product-card {
+  width: 100%;
+  max-width: 460px;
+
+  background:
+    rgba(255,255,255,0.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  backdrop-filter:
+    blur(25px);
+
+  border-radius: 35px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  position: relative;
+
+  box-shadow:
+    0 20px 50px
+    rgba(0,0,0,.35);
+
+  transition: .3s ease;
+}
+
+.hero-product-card:hover {
+  transform:
+    translateY(-8px);
+}
+
+.sale-badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ef4444,
+      #dc2626
+    );
+
+  padding: 10px 16px;
+
+  border-radius: 999px;
+
+  font-size: .85rem;
+  font-weight: 700;
+}
+
+.hero-img {
+  width: 100%;
+  height: 320px;
+
+  object-fit: cover;
+
+  border-radius: 25px;
+
+  margin-bottom: 22px;
+}
+
+.hero-product-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.hero-product-card p {
+  color:
+    rgba(255,255,255,.7);
+
+  line-height: 1.7;
+
+  margin-bottom: 15px;
+}
+
+.hero-product-card h2 {
+  color: #f6d96f;
+  font-size: 2rem;
+}
+
+/* =========================
+   SECTION
+========================= */
+.featured-products-section,
+.benefits-section {
+  padding: 90px 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 35px;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+}
+
+/* PRODUCTS */
+.products-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px,1fr)
+    );
+
+  gap: 30px;
+}
+
+/* VIEW BUTTON */
+.view-all-button {
+  border: none;
+  cursor: pointer;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f6d96f,
+      #f3c84b
+    );
+
+  color: #111;
+
+  padding: 15px 30px;
+
+  border-radius: 18px;
+
+  font-weight: 700;
+
+  transition: .3s ease;
+}
+
+.view-all-button:hover {
+  transform:
+    translateY(-2px);
+}
+
+/* =========================
+   BENEFITS
+========================= */
+.benefits-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(280px,1fr)
+    );
+
+  gap: 28px;
+}
+
+.benefit-card {
+  background:
+    rgba(255,255,255,.08);
+
+  border:
+    1px solid
+    rgba(255,255,255,.08);
+
+  backdrop-filter:
+    blur(20px);
+
+  border-radius: 28px;
+
+  padding: 35px;
+
+  text-align: center;
+
+  transition: .3s ease;
+}
+
+.benefit-card:hover {
+  transform:
+    translateY(-8px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.benefit-card h3 {
+  margin-bottom: 14px;
+}
+
+.benefit-card p {
+  color:
+    rgba(255,255,255,.7);
+  line-height: 1.8;
+}
+
+/* ===== SPINNER ===== */
+.spinner {
+  width: 55px;
+  height: 55px;
+
+  border:
+    4px solid
+    rgba(255,255,255,.12);
+
+  border-top:
+    4px solid
+    #f6d96f;
+
+  border-radius: 50%;
+
+  margin: auto;
+
+  animation:
+    spin .8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform:
+      rotate(360deg);
+  }
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media(max-width:992px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-buttons,
+  .hero-stats {
+    justify-content: center;
+  }
+
+  .section-header {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+@media(max-width:600px) {
+
+  .hero-title {
+    font-size: 2.3rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .cta-button {
+    width: 100%;
+  }
+}
